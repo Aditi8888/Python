@@ -1,13 +1,7 @@
-num1 = input("enter num1 :")
-num2 = input("enter num2 :")
-add = int(num1)+ int(num2)
-print(add)
-sub = int(num1)- int(num2)
-print(sub)
-mul = int(num1)* int(num2)
-print(mul)
-div = int(num1)/int(num2)
-print(div)
-div_float = float(num1) / float(num2)
-print("Float Division:", div_float)       
-print("Type:", type(div_float))
+number = ["1","2","3","4","5"]
+for numbers in number :
+    print(numbers)
+number.sort
+print(number)
+number.reverse()
+print(number)

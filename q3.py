@@ -1,9 +1,17 @@
-num1 = int(input("enter num 1 :"))
-num2 = int(input("enter num 2 :"))
-num3 = int(input("enter num 3 :"))
-if num1 >= num2 and num1 >= num3:
-    print(f"{num1} is the greatest")
-elif num2 >= num1 and num2 >= num3:
-    print(f"{num2} is the greatest")
-else:
-    print(f"{num3} is the greatest")
+import math 
+def is_prime(n) :
+    if n<=1 :
+        return False
+    if n<=3 :
+        return True
+    if n%2 == 0 or n%3== 0 :
+        return False
+    for i in range(5, int(math.sqrt(n)) + 1, 2):
+      if n % i == 0:
+          return False
+      return True
+for n in range(1,21) :
+     if is_prime(n):
+        print(f"{n} is prime")
+     else:
+        print(f"{n} is not prime")

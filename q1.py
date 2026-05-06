@@ -1,9 +1,8 @@
-name = input("enter your name :")
-print(f"Hello {name}")
-age = input("enter your age :")
-print(f"You are {age}years old")
-city = input("enter your city")
-print(f"you live in {city}")
-print(f"Hello {name}"+ f"You are {age}years old"+ f"You live in {city}")
+movie = ["When I fly towards you","Miss dragon","Sweet first love","Beautiful day","Ang e mutya"]
 
-
+#print(movie[0])
+#print(movie[4])
+#print(movie[2])
+movie.insert(1,"Don't disturb my study")
+movie.remove("Miss dragon")
+print(movie)
