@@ -1,17 +1,13 @@
-import math 
-def is_prime(n) :
-    if n<=1 :
-        return False
-    if n<=3 :
-        return True
-    if n%2 == 0 or n%3== 0 :
-        return False
-    for i in range(5, int(math.sqrt(n)) + 1, 2):
-      if n % i == 0:
-          return False
-      return True
-for n in range(1,21) :
-     if is_prime(n):
-        print(f"{n} is prime")
-     else:
-        print(f"{n} is not prime")
+def remove_duplicates(numbers):
+    seen = []
+    result = []
+    for num in numbers:
+        if num not in seen:
+            seen.append(num)
+            result.append(num)
+    return result
+
+# Example usage
+nums = [1, 2, 3, 2, 4, 1, 5, 3, 6]
+print("Original:", nums)
+print("No duplicates:", remove_duplicates(nums))
